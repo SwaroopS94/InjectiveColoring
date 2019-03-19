@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Injective Coloring</title>
+</head>
+<body>
+<script src="injectiveColoring.js"></script>
+<div>
+  <span class="nodeInput label">
+  Enter Input
+  <input id="gridInput" type="text" placeholder="Enter number of Nodes" />
+</span>
+  <br>
+  <div class="btn-container">
+    <button class="btn" id="showGridBtn" type=button onclick="openGridLayout()">Show Grid</button>
+
+    <button id="calculateBtn" class="btn" onclick="calculate()" type="button" > Calculate</button>
+  </div>
+  <br>
+  <div id="tableContainer" class="table-container">
+  </div>
+  <div id="result" class="result-container"></div>
+</div>
+</body>
+
+<style>
+  body {
+    position: relative;
+
+  }
+
+  .nodeInput {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .nodeInput input{
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .btn-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin:0;
+    padding-top: 20px;
+  }
+
+  .label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .btn {
+    font-weight: bolder;
+    margin: auto;
+    background:green;
+    font-size: 15px;
+    font-style: normal;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+
+  .gridNode {
+    border: 1px solid;
+  }
+  .gridNode input {
+    width: 20px;
+    height: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  .result-container {
+    position:relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+</style>
+</html>
